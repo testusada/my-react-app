@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "cross-env PORT=5173 vite preview --host --port=%PORT%",
-    "start": "cross-env PORT=5173 vite preview --host --port=%PORT%"
+    "start": "cross-env PORT=$PORT vite preview --host --port=$PORT"
   },
   "dependencies": {
     "react": "^19.0.0",
