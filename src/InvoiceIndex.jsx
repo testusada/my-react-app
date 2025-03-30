@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import YearMonthForm from "./components/YearMonthForm";
 import DownloadPdf from "./DownloadPdf";
-function App() {
+function InvoiceIndex() {
   const [companies, setCompanies] = useState([]);
   const [yearMonth, setYearMonth] = useState("2024-02");
   const [errorMessage, setErrorMessage] = useState("");
@@ -20,9 +20,9 @@ function App() {
     setCompanies(data.company_lists || []);
     setErrorMessage(data.error_message);
   };
-  useEffect(() => {
-    console.log("更新されたcompanies:", companies);
-  }, [companies]);
+  // useEffect(() => {
+  //   console.log("更新されたcompanies:", companies);
+  // }, [companies]);
   return (
     <>
       <div>
@@ -66,4 +66,4 @@ function App() {
   );
 }
 
-export default App;
+export default InvoiceIndex;

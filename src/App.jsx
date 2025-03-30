@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
-
+import { Link } from "react-router-dom";
 // 各ページのコンポーネントを作成
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
@@ -18,16 +18,18 @@ function App() {
         <nav>
           <ul>
             <li>
+              <Link to="/">HOME</Link>
               <a href="/">Home</a>
             </li>
             <li>
+              <Link to="/about">About</Link>
               <a href="/about">About</a>
             </li>
             <li>
-              <a href="/invoce-index">InvoiceIndex</a>
+              <Link to="/invoice-index">InvoiceIndex</Link>
             </li>
             <li>
-              <a href="/download-pdf">DownloadPdf</a>
+              <Link to="/download-pdf">DownloadPdf</Link>
             </li>
           </ul>
         </nav>
